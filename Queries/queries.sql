@@ -152,7 +152,14 @@ ON (ce.emp_no = de.emp_no)
 INNER JOIN departments AS d
 ON (de.dept_no = d.dept_no);
 	
-	
+SELECT emp_no,
+	first_name,
+	last_name,
+	dept_name
+INTO sales_dev_retire_info
+FROM dept_info
+WHERE dept_name IN ('Sales','Development');
+
 	
 	
 	
